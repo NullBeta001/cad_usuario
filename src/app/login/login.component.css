@@ -1,0 +1,79 @@
+.login{
+    background-color: #494d4b;
+    width: max-width;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    display: flexbox;
+}
+
+#titulo {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: titillium web;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.senha {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#float-input {
+    width: 300px;
+}
+
+.fl {
+    font-family: titillium web;
+    font-size: large;
+
+}
+
+#botao {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#bt {
+    width: 300px;
+}
+
+.p-button-secondary {
+    width: 150px;
+}
+
+.p-button-warning {
+    width: 150px;
+}
+
+#google {
+    width: 20px;
+}
+
+.cad {
+    font-family: titillium web;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
