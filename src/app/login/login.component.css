@@ -1,5 +1,4 @@
 .login{
-    background-color: #494d4b;
     width: max-width;
     height: 750px;
     display: flex;
@@ -8,13 +7,15 @@
 }
 
 .cont {
-    background-color: white;
+    background-color: #0f132e ;
     width: 500px;
     height: 600px;
     display: flexbox;
+    border-radius: 15px;
 }
 
 #titulo {
+    color: aliceblue;
     font-size: 45px;
     text-transform: uppercase;
     font-family: titillium web;
@@ -58,7 +59,7 @@
     width: 300px;
 }
 
-.p-button-secondary {
+.p-button-help {
     width: 150px;
 }
 
@@ -71,6 +72,7 @@
 }
 
 .cad {
+    color: aliceblue;
     font-family: titillium web;
     display: flex;
     justify-content: center;

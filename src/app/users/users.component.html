@@ -1,0 +1,58 @@
+<app-header></app-header>
+<div class="botao">
+    <p-button class="add" (click)="showResponsiveDialog()" icon="pi pi-external-link" label="Adicionar"></p-button>
+</div>
+<p-dialog header="Adicionar Usuário" [(visible)]="displayResponsive" [breakpoints]="{'960px': '75vw'}"
+    [style]="{width: '20vw'}" [draggable]="false" [resizable]="false">
+    <div>
+        <div class="form">
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText [(ngModel)]="request.id">
+                <label id="label" for="float-input">ID</label>
+            </span>
+        </div>
+        <div class="form">
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText [(ngModel)]="request.first_name">
+                <label id="label" for="float-input">Nome</label>
+            </span>
+        </div>
+        <div class="form">
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText [(ngModel)]="request.last_name">
+                <label id="label" for="float-input">Sobrenome</label>
+            </span>
+        </div>
+        <div class="form">
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText [(ngModel)]="request.email">
+                <label id="label" for="float-input">E-Mail</label>
+            </span>
+        </div>
+    </div>
+    <ng-template pTemplate="footer">
+        <p-button type="button" (click)="displayResponsive=false" label="Cancelar" class="p-button-danger"></p-button>
+        <p-button type="button" (click)="save()" (onClick)="displayResponsive=false" label="Cadastrar"
+            class="p-button-secondary"></p-button>
+    </ng-template>
+</p-dialog>
+<div class="tabela">
+    <p-table class="ptable" [value]="responseUsers.data" [tableStyle]="{'min-width': '50rem'}">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>E-Mail</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-user>
+            <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.first_name}}</td>
+                <td>{{user.last_name}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

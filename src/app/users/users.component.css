@@ -1,0 +1,52 @@
+.add {
+    width: 160px;
+    height: 48px;
+    margin-top: 90px;
+    margin-left: 410px;
+}
+
+.botao {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+}
+
+.ng-tns-c94-0{
+    margin-top: 25px;
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+}
+
+.ptable {
+    width: 1100px;
+}
+
+:host ::ng-deep .p-button {
+    margin: 0 .5rem 0 0;
+    min-width: 10rem;
+}
+
+p {
+    margin: 0;
+}
+
+.confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:host ::ng-deep .p-dialog .p-button {
+    min-width: 6rem;
+}
+
+.form{
+    margin-top: 10px;
+    height: 70px;
+}
+
+
+
