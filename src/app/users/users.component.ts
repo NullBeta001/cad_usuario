@@ -38,8 +38,8 @@ export class UsersComponent implements OnInit {
   ngOnInit() {
     this.userService.getUsers()
       .subscribe(res => {
-        this.responseUsers = res;
-      })
+        this.responseUsers = res
+      });
 
   }
 
@@ -51,4 +51,3 @@ export class UsersComponent implements OnInit {
 
 }
 
-console.log(Response)
